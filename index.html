@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GP Holding Participações — Ecossistema de Negócios</title>
+  <meta name="description" content="GP Holding (GPH): tecnologia, agronegócio, investimentos imobiliários e criação de aves & gado. Estratégia, eficiência e execução — em um só ecossistema." />
+
+  <!-- TailwindCSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon opcional -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2215%22 fill=%22%23145c3d%22/><text x=%2250%25%22 y=%2258%25%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%2C%20Helvetica%2C%20sans-serif%22>G</text></svg>">
+
+  <style>
+    /* Suave melhora na rolagem */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-amber-50 text-slate-800">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="h-9 w-9 rounded-xl bg-emerald-600 grid place-content-center text-white shadow ring-1 ring-black/5">
+          <!-- simples ícone "camadas" -->
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2L3 7l9 5 9-5-9-5Z" stroke-width="1.5"/>
+            <path d="m3 12 9 5 9-5" stroke-width="1.5"/>
+            <path d="m3 17 9 5 9-5" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-extrabold tracking-tight leading-none">GP Holding Participações</div>
+          <div class="text-xs text-slate-500 -mt-0.5">Ecossistema de Negócios</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-emerald-700" href="#sobre">Sobre</a>
+        <a class="hover:text-emerald-700" href="#empresas">Empresas</a>
+        <a class="hover:text-emerald-700" href="#servicos">Soluções</a>
+        <a class="hover:text-emerald-700" href="#contato">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="https://instagram.com/gphparbrasil" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-xl border hover:bg-slate-50">
+          <!-- ícone Instagram simples -->
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke-width="1.5"></rect>
+            <circle cx="12" cy="12" r="4" stroke-width="1.5"></circle>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+          </svg>
+          @gphparbrasil
+        </a>
+        <a href="#contato" class="hidden sm:inline-flex">
+          <button class="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">Fale conosco</button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- HERO -->
+    <section class="py-16 sm:py-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            Construímos marcas,
+            <span class="text-emerald-700"> aceleramos negócios</span> e
+            cultivamos valor real.
+          </h1>
+          <p class="mt-5 text-lg text-slate-600 max-w-xl">
+            A GP Holding (GPH) integra operações em tecnologia, agronegócio, investimentos
+            imobiliários e criação de aves &amp; gado. Estratégia, eficiência e execução — em um só ecossistema.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#empresas">
+              <button class="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 inline-flex items-center gap-2">
+                Conheça as empresas
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M5 12h14M13 5l7 7-7 7" stroke-width="1.5" />
+                </svg>
+              </button>
+            </a>
+            <a href="#servicos">
+              <button class="px-4 py-2 rounded-xl border hover:bg-slate-50 inline-flex items-center">
+                Soluções e serviços
+              </button>
+            </a>
+          </div>
+          <ul class="mt-8 grid sm:grid-cols-3 gap-4 text-sm text-slate-700">
+            <li class="flex items-center gap-2">
+              <svg class="h-4 w-4 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="1.5"/></svg>
+              Governança e Compliance
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="h-4 w-4 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="14" rx="2" stroke-width="1.5"/><path d="M7 21h10" stroke-width="1.5"/></svg>
+              Eficiência Operacional
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="h-4 w-4 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 20V10a5 5 0 0110 0v10" stroke-width="1.5"/><rect x="4" y="20" width="16" height="2" fill="currentColor"/></svg>
+              ESG &amp; Sustentabilidade
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="relative">
+            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-emerald-200 via-amber-200 to-white blur-2xl opacity-70"></div>
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+              <img
+                alt="Hero image — campo e cidade"
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop"
+                class="aspect-[16/10] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPIs -->
+    <section class="pb-6 -mt-6" aria-label="indicadores">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="rounded-2xl border bg-white">
+          <div class="py-6 px-6">
+            <div class="text-2xl font-extrabold">+10 anos</div>
+            <div class="text-sm text-slate-600">de atuação</div>
+          </div>
+        </div>
+        <div class="rounded-2xl border bg-white">
+          <div class="py-6 px-6">
+            <div class="text-2xl font-extrabold">4 frentes</div>
+            <div class="text-sm text-slate-600">de negócios</div>
+          </div>
+        </div>
+        <div class="rounded-2xl border bg-white">
+          <div class="py-6 px-6">
+            <div class="text-2xl font-extrabold">Brasil / PT</div>
+            <div class="text-sm text-slate-600">presença</div>
+          </div>
+        </div>
+        <div class="rounded-2xl border bg-white">
+          <div class="py-6 px-6">
+            <div class="text-2xl font-extrabold">+100k</div>
+            <div class="text-sm text-slate-600">alcance social</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="py-20">
+      <div class="grid lg:grid-cols-3 gap-8 items-start">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Quem somos</h2>
+          <p class="mt-4 text-lg text-slate-700">
+            Unimos estratégia, branding, operações e tecnologia para tirar projetos do papel e escalar
+            negócios com governança e propósito. Nosso time combina vivência em Customer Success,
+            marketing digital e operações em campo.
+          </p>
+          <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-slate-700">
+            <li class="flex items-center gap-2">• Holding &amp; Governança</li>
+            <li class="flex items-center gap-2">• Agronegócio &amp; Sustentabilidade</li>
+            <li class="flex items-center gap-2">• Investimentos Imobiliários</li>
+            <li class="flex items-center gap-2">• Criação de Aves &amp; Gado</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border bg-white">
+          <div class="p-6">
+            <div class="font-semibold text-lg">Manifesto</div>
+            <div class="text-sm text-slate-500 mb-3">Visão, valores e execução</div>
+            <div class="text-slate-700 space-y-3">
+              <p>• Crescer com responsabilidade e impacto positivo.</p>
+              <p>• Transformar dados em decisões e resultados.</p>
+              <p>• Fortalecer marcas com autenticidade e consistência.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMPRESAS -->
+    <section id="empresas" class="py-20">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Nossas empresas</h2>
+      <p class="mt-3 text-slate-700">Marcas complementares sob uma mesma governança.</p>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <article class="rounded-2xl border bg-white h-full">
+          <header class="p-6 flex items-center gap-3">
+            <div class="h-10 w-10 rounded-xl bg-emerald-600/10 text-emerald-700 grid place-content-center ring-1 ring-black/5">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 2L3 7l9 5 9-5-9-5Z" stroke-width="1.5"/>
+                <path d="m3 12 9 5 9-5" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">GP Holding Participações</h3>
+              <p class="text-sm text-slate-500">Gestão, governança e estratégia do ecossistema.</p>
+            </div>
+          </header>
+          <div class="px-6 pb-6">
+            <ul class="text-sm text-slate-700 space-y-2 list-disc pl-4">
+              <li>Planejamento corporativo</li>
+              <li>Compliance &amp; jurídico</li>
+              <li>Brand house</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="rounded-2xl border bg-white h-full">
+          <header class="p-6 flex items-center gap-3">
+            <div class="h-10 w-10 rounded-xl bg-emerald-600/10 text-emerald-700 grid place-content-center ring-1 ring-black/5">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 20V7a2 2 0 012-2h2l2-2h4l2 2h2a2 2 0 012 2v13" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">G Agro Ltda</h3>
+              <p class="text-sm text-slate-500">Consultoria agronômica e operações no campo.</p>
+            </div>
+          </header>
+          <div class="px-6 pb-6">
+            <ul class="text-sm text-slate-700 space-y-2 list-disc pl-4">
+              <li>Projeto produtivo</li>
+              <li>Nutrição e manejo</li>
+              <li>Market fit agro</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="rounded-2xl border bg-white h-full">
+          <header class="p-6 flex items-center gap-3">
+            <div class="h-10 w-10 rounded-xl bg-emerald-600/10 text-emerald-700 grid place-content-center ring-1 ring-black/5">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M3 21V10l9-7 9 7v11H3z" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">GP Investimentos Imobiliários Ltda</h3>
+              <p class="text-sm text-slate-500">Aquisição, locação e desenvolvimento de ativos.</p>
+            </div>
+          </header>
+          <div class="px-6 pb-6">
+            <ul class="text-sm text-slate-700 space-y-2 list-disc pl-4">
+              <li>Análise de viabilidade</li>
+              <li>Gestão de portfólio</li>
+              <li>Parcerias</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="rounded-2xl border bg-white h-full">
+          <header class="p-6 flex items-center gap-3">
+            <div class="h-10 w-10 rounded-xl bg-emerald-600/10 text-emerald-700 grid place-content-center ring-1 ring-black/5">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M3 17s3-2 5-2 5 2 5 2M4 9h6M14 14c2-1 4-4 4-7a5 5 0 10-10 0c0 3 2 6 4 7z" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">Criatório Peres Ltda</h3>
+              <p class="text-sm text-slate-500">Criação de galináceos e gado com genética e bem-estar.</p>
+            </div>
+          </header>
+          <div class="px-6 pb-6">
+            <ul class="text-sm text-slate-700 space-y-2 list-disc pl-4">
+              <li>Linhas: Cubalaya, Ameraucana</li>
+              <li>Nelore &amp; Girolando</li>
+              <li>Sanidade &amp; rastreio</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="py-20">
+      <div class="grid lg:grid-cols-3 gap-6">
+        <article class="rounded-2xl border bg-white">
+          <div class="p-6">
+            <div class="h-10 w-10 rounded-xl bg-amber-500/10 text-amber-700 grid place-content-center mb-3">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 7h18M3 12h18M3 17h18" stroke-width="1.5"/></svg>
+            </div>
+            <h3 class="font-semibold text-lg">Branding &amp; Sites</h3>
+            <p class="text-sm text-slate-600">Identidade visual, sites rápidos e SEO técnico.</p>
+          </div>
+          <div class="px-6 pb-6">
+            <ul class="space-y-2 text-sm text-slate-700 list-disc pl-4">
+              <li>Design system e guias de marca</li>
+              <li>Landing pages e e-commerce</li>
+              <li>Conteúdo para Instagram &amp; LinkedIn</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border bg-white">
+          <div class="p-6">
+            <div class="h-10 w-10 rounded-xl bg-amber-500/10 text-amber-700 grid place-content-center mb-3">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v18M3 12h18" stroke-width="1.5"/></svg>
+            </div>
+            <h3 class="font-semibold text-lg">Marketing &amp; Growth</h3>
+            <p class="text-sm text-slate-600">Aquisição, CRM e mensuração com dados.</p>
+          </div>
+          <div class="px-6 pb-6">
+            <ul class="space-y-2 text-sm text-slate-700 list-disc pl-4">
+              <li>Meta Ads, Google &amp; SEO</li>
+              <li>WhatsApp Flows e automações</li>
+              <li>Atribuição (Pixel + CAPI)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border bg-white">
+          <div class="p-6">
+            <div class="h-10 w-10 rounded-xl bg-amber-500/10 text-amber-700 grid place-content-center mb-3">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 20V8l8-5 8 5v12" stroke-width="1.5"/></svg>
+            </div>
+            <h3 class="font-semibold text-lg">Agro &amp; Operações</h3>
+            <p class="text-sm text-slate-600">Projetos, manejo, genética e rastreabilidade.</p>
+          </div>
+          <div class="px-6 pb-6">
+            <ul class="space-y-2 text-sm text-slate-700 list-disc pl-4">
+              <li>Nutrição e insumos</li>
+              <li>Gestão por indicadores</li>
+              <li>Parcerias e extensão</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20">
+      <div class="rounded-3xl overflow-hidden border bg-white">
+        <div class="grid lg:grid-cols-2">
+          <div class="p-8 sm:p-12">
+            <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Pronto para acelerar seu projeto?</h3>
+            <p class="mt-3 text-slate-700">Conte sua necessidade e retornamos com um plano objetivo de ação.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#contato">
+                <button class="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">Fale com o time</button>
+              </a>
+              <a href="https://wa.me/5562999999999" target="_blank" rel="noreferrer">
+                <button class="px-4 py-2 rounded-xl border hover:bg-slate-50">WhatsApp</button>
+              </a>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-emerald-50 to-amber-50 p-8 sm:p-12">
+            <ul class="grid sm:grid-cols-2 gap-4">
+              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Prazo e escopo claros</li>
+              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Entrega iterativa</li>
+              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Métricas e relatório</li>
+              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Suporte próximo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-20">
+      <div class="grid lg:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Contato</h2>
+          <p class="mt-3 text-slate-700">Preencha o formulário e retornamos em até 1 dia útil.</p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+            <li class="flex items-center gap-2">
+              <svg class="h-4 w-4 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16v16H4z" stroke-width="1.5"/><path d="M4 7l8 6 8-6" stroke-width="1.5"/></svg>
+              contato@gphparticipacoes.com.br
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="h-4 w-4 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92V21a1 1 0 01-1.09 1 19.86 19.86 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.86 19.86 0 013 3.09 1 1 0 014 2h4.09A1 1 0 019.1 3.06a12.44 12.44 0 001.11 2.49 1 1 0 01-.27 1.28L9 8a16 16 0 006 6l1.17-1a1 1 0 011.28-.27 12.44 12.44 0 002.49 1.11 1 1 0 01.96 1.08z" stroke-width="1.5"/></svg>
+              +55 (62) 33442-1060
+            </li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border bg-white">
+          <div class="p-6 border-b">
+            <div class="font-semibold">Fale com a GPH</div>
+            <div class="text-sm text-slate-500">Envie uma mensagem</div>
+          </div>
+          <form action="https://formsubmit.co/contato@gphparticipacoes.com.br" method="POST" class="p-6 space-y-3">
+
+  <!-- configurações -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://gphparticipacoes.com.br/obrigado.html">
+
+  <!-- campos -->
+  <input name="Nome" class="w-full rounded-xl border px-3 py-2" placeholder="Nome" required />
+  <input type="email" name="Email" class="w-full rounded-xl border px-3 py-2" placeholder="E-mail" required />
+  <input name="Telefone" class="w-full rounded-xl border px-3 py-2" placeholder="Telefone / WhatsApp" />
+  <textarea name="Mensagem" rows="4" class="w-full rounded-xl border px-3 py-2" placeholder="Conte-nos sobre seu projeto"></textarea>
+
+  <button type="submit" class="w-full px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">
+    Enviar
+  </button>
+</form>
+
+          <div class="px-6 pb-6 text-xs text-slate-500">Ao enviar, você concorda com nossa Política de Privacidade.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t mt-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>© <span id="year"></span> GP Holding Participações — Todos os direitos reservados.</div>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-emerald-700" href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade (LGPD)</a>
+        <a class="hover:text-emerald-700" href="termos-uso-gph.html" target="_blank" rel="noopener">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS mínimo (sem JSX) -->
+  <script>
+    // Atualiza o ano automaticamente
+    document.getElementById("year").textContent = new Date().getFullYear().toString();
+  </script>
+</body>
+</html>
