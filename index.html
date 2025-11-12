@@ -264,7 +264,7 @@
       </header>
       <div class="px-6 pb-6">
         <ul class="text-sm text-slate-700 space-y-2 list-disc pl-4">
-          <li>Linhas: Cubalaya, Ameraucana</li>
+          <li>Linhas: Galininacéos Ornamentais e Postura</li>
           <li>Nelore &amp; Girolando</li>
           <li>Sanidade &amp; rastreio</li>
         </ul>
@@ -327,34 +327,53 @@
         </article>
       </div>
     </section>
+    
+    <!-- NEWSLETTER -->
+<section class="py-20 bg-gradient-to-br from-emerald-50 via-white to-amber-50">
+  <div class="rounded-3xl border bg-white shadow-sm max-w-4xl mx-auto p-10 text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-800">
+      Inscreva-se para receber novidades
+    </h2>
+    <p class="mt-3 text-slate-700 max-w-xl mx-auto">
+      Fique por dentro das atualizações do Grupo GP Holding — novidades, oportunidades e conteúdos exclusivos do nosso ecossistema de negócios.
+    </p>
 
-    <!-- CTA -->
-    <section class="py-20">
-      <div class="rounded-3xl overflow-hidden border bg-white">
-        <div class="grid lg:grid-cols-2">
-          <div class="p-8 sm:p-12">
-            <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Pronto para acelerar seu projeto?</h3>
-            <p class="mt-3 text-slate-700">Conte sua necessidade e retornamos com um plano objetivo de ação.</p>
-            <div class="mt-6 flex flex-wrap gap-3">
-              <a href="#contato">
-                <button class="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">Fale com o time</button>
-              </a>
-              <a href="https://wa.me/5562999999999" target="_blank" rel="noreferrer">
-                <button class="px-4 py-2 rounded-xl border hover:bg-slate-50">WhatsApp</button>
-              </a>
-            </div>
-          </div>
-          <div class="bg-gradient-to-br from-emerald-50 to-amber-50 p-8 sm:p-12">
-            <ul class="grid sm:grid-cols-2 gap-4">
-              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Prazo e escopo claros</li>
-              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Entrega iterativa</li>
-              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Métricas e relatório</li>
-              <li class="flex items-center gap-3 text-slate-800"><span class="h-2 w-2 rounded-full bg-emerald-600"></span>Suporte próximo</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <form 
+      name="newsletter" 
+      method="POST" 
+      data-netlify="true"
+      action="/obrigado.html"
+      class="mt-8 grid sm:grid-cols-3 gap-3 max-w-2xl mx-auto"
+    >
+      <input type="hidden" name="form-name" value="newsletter" />
+      <input 
+        type="text" 
+        name="nome" 
+        placeholder="Seu nome" 
+        required
+        class="rounded-xl border px-4 py-3 sm:col-span-1 col-span-3 focus:ring-emerald-500 focus:border-emerald-500"
+      />
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Seu e-mail" 
+        required
+        class="rounded-xl border px-4 py-3 sm:col-span-1 col-span-3 focus:ring-emerald-500 focus:border-emerald-500"
+      />
+      <button 
+        type="submit" 
+        class="rounded-xl bg-emerald-600 text-white font-semibold px-4 py-3 hover:bg-emerald-700 transition sm:col-span-1 col-span-3"
+      >
+        Inscrever-se
+      </button>
+    </form>
+
+    <p class="mt-5 text-xs text-slate-500">
+      Ao se inscrever, você concorda em receber comunicações da GP Holding Participações LTDA.
+    </p>
+  </div>
+</section>
+
 
     <!-- CONTATO -->
     <section id="contato" class="py-20">
