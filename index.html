@@ -390,40 +390,44 @@
     </p>
 
     <form 
-      name="newsletter" 
-      method="POST" 
-      data-netlify="true"
-      action="/obrigado.html"
-      class="mt-8 grid sm:grid-cols-3 gap-3 max-w-2xl mx-auto"
-    >
-      <input type="hidden" name="form-name" value="newsletter" />
-      <input 
-        type="text" 
-        name="nome" 
-        placeholder="Seu nome" 
-        required
-        class="rounded-xl border px-4 py-3 sm:col-span-1 col-span-3 focus:ring-emerald-500 focus:border-emerald-500"
-      />
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="Seu e-mail" 
-        required
-        class="rounded-xl border px-4 py-3 sm:col-span-1 col-span-3 focus:ring-emerald-500 focus:border-emerald-500"
-      />
-      
-      <!-- CAPTCHA -->
+  name="newsletter" 
+  method="POST" 
+  data-netlify="true"
+  data-netlify-recaptcha="true"
+  action="/obrigado.html"
+  class="mt-8 grid sm:grid-cols-3 gap-3 max-w-2xl mx-auto"
+>
+  <input type="hidden" name="form-name" value="newsletter" />
+
+  <input 
+    type="text" 
+    name="nome" 
+    placeholder="Seu nome" 
+    required
+    class="rounded-xl border px-4 py-3 sm:col-span-1 col-span-3"
+  />
+
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Seu e-mail" 
+    required
+    class="rounded-xl border px-4 py-3 sm:col-span-1 col-span-3"
+  />
+
+  <!-- CAPTCHA -->
   <div class="col-span-3 my-2">
     <div data-netlify-recaptcha="true"></div>
   </div>
-      
-      <button 
-        type="submit" 
-        class="rounded-xl bg-emerald-600 text-white font-semibold px-4 py-3 hover:bg-emerald-700 transition sm:col-span-1 col-span-3"
-      >
-        Inscrever-se
-      </button>
-    </form>
+
+  <button 
+    type="submit" 
+    class="rounded-xl bg-emerald-600 text-white font-semibold px-4 py-3 hover:bg-emerald-700 col-span-3 sm:col-span-1"
+  >
+    Inscrever-se
+  </button>
+</form>
+
 
     <p class="mt-5 text-xs text-slate-500">
       Ao se inscrever, você concorda em receber comunicações da GP Holding Participações LTDA.
