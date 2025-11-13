@@ -483,15 +483,21 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t mt-16">
+    <footer class="border-t mt-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
       <div>© <span id="year"></span> GP Holding Participações Ltda — Todos os direitos reservados.</div>
       <div class="flex items-center gap-4">
+        <a class="hover:text-emerald-700" href="a-holding.html">A Holding</a>
+        <a class="hover:text-emerald-700" href="sobre-o-fundador.html">Sobre o fundador</a>
         <a class="hover:text-emerald-700" href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade (LGPD)</a>
         <a class="hover:text-emerald-700" href="termos-uso-gph.html" target="_blank" rel="noopener">Termos de Uso</a>
       </div>
     </div>
   </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear().toString();
+  </script>
+
 
   <!-- JS mínimo (sem JSX) -->
   <script>
