@@ -411,6 +411,12 @@
         required
         class="rounded-xl border px-4 py-3 sm:col-span-1 col-span-3 focus:ring-emerald-500 focus:border-emerald-500"
       />
+      
+      <!-- CAPTCHA -->
+  <div class="col-span-3 my-2">
+    <div data-netlify-recaptcha="true"></div>
+  </div>
+      
       <button 
         type="submit" 
         class="rounded-xl bg-emerald-600 text-white font-semibold px-4 py-3 hover:bg-emerald-700 transition sm:col-span-1 col-span-3"
@@ -470,6 +476,11 @@
   <input type="email" name="Email" class="w-full rounded-xl border px-3 py-2" placeholder="E-mail" required />
   <input name="Telefone" class="w-full rounded-xl border px-3 py-2" placeholder="Telefone / WhatsApp" />
   <textarea name="Mensagem" rows="4" class="w-full rounded-xl border px-3 py-2" placeholder="Conte-nos sobre seu projeto"></textarea>
+
+  <!-- CAPTCHA -->
+  <div class="my-2">
+    <div data-netlify-recaptcha="true"></div>
+  </div>
 
   <button type="submit" class="w-full px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">
     Enviar
